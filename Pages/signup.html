@@ -1,0 +1,44 @@
+<!-- SIGNUP PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOT Messenger</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+</head>
+<body>
+    <img src="../Assets/Messengerlogo.svg" class="logo">
+    <h4 class="nottxt">NOT</h4>
+    <h2 class="connecttxt">Signup with your favourite people</h2>
+    <input type="text" class="inputboxa" placeholder=" Email address" id="emailsignup">
+    <input type="text" class="inputboxb" placeholder=" Password" id="passwordsignup">
+    <button class="continuebtn" onclick="signup()">Signup</button>
+    <a href="../index.html" class="hrefa">Already Have an Account? LoginIn.</a>
+
+<!-- FIREBASE SCRIPTS -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyD1ZCPf32sOzDBQCl13rFD0Fw6ZLmKa5jE",
+    authDomain: "hacktable-athon.firebaseapp.com",
+    databaseURL: "https://hacktable-athon.firebaseio.com",
+    projectId: "hacktable-athon",
+    storageBucket: "hacktable-athon.appspot.com",
+    messagingSenderId: "170241605518",
+    appId: "1:170241605518:web:f37c519d21a2aa45c52edf",
+    measurementId: "G-46K3B849QQ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+</script>
+<script src="../Scripts/app.js"></script>
+</body>
+</html>

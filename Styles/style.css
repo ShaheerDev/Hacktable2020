@@ -1,0 +1,75 @@
+/* LOGIN PAGE */
+
+body {
+ overflow-x: hidden;
+}
+
+.nottxt {
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    position: relative;
+    top: 1px;
+    left: 575px;
+}
+
+.logo{
+    position: relative;
+    top: 50px;
+    left: 580px;
+}
+
+.connecttxt {
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    position: relative;
+    top: 50px;
+    left: 450px;
+}
+
+.inputboxa {
+    position: relative;
+    top: 50px;
+    left: 450px;
+    border: 1px solid rgba(0, 0, 0, .20);
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 1);
+    display: block;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    height: 42px;
+    width: 400px;
+}
+
+.inputboxb {
+    position: relative;
+    top: 60px;
+    left: 450px;
+    border: 1px solid rgba(0, 0, 0, .20);
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 1);
+    display: block;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    height: 42px;
+    width: 400px;
+}
+
+.continuebtn {
+    position: relative;
+    top: 70px;
+    left: 585px;
+    background: #0a7cff;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 15px;
+    padding: 9.5px 20px;
+}
+
+.hrefa {
+    position: relative;
+    top: 120px;
+    left: 420px;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    color: #262626;
+    font-size: 15px;
+    font-weight: 400;
+}
+

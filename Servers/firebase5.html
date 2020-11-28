@@ -1,0 +1,56 @@
+<!-- SIGNUP PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOT Messenger</title>
+    <link rel="stylesheet" href="../Styles/chatstyle.css">
+</head>
+<body onload="usermail()">
+    <img src="../Assets/Messengerlogo.svg" class="logo">
+    <a style="position: absolute;top: 30px;left: 70px;font-family: sans-serif;" id="useremailtxt"></a>
+    <ul class="servers">
+    <h2 style="font-family: sans-serif;">AVAILABLE SERVERS:</h2>
+    <li><a id="firebase1a">Firebase 1</a></li>
+    <li><a id="firebase2a">Firebase 2</a></li>
+    <li><a id="firebase3a">Firebase 3</a></li>
+    <li><a id="firebase4a">Firebase 4</a></li>
+    <li><a id="firebase5a">You are already on Firebase 5</a></li>
+    <li><a id="firebase6a">Firebase 6</a></li>
+    </ul>
+    <div class="messagediv">
+    <ul id="messages"></ul>
+
+    <br>
+    <br>
+    <br>
+    <textarea id="message" placeholder="Enter message..." rows="3" cols="163" style="resize: none;"></textarea>
+    <button id="submitibtn" onclick="sendMessage()">Send</button>
+    </div>
+<!-- FIREBASE SCRIPTS -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+<script>
+var firebaseConfig = {
+    apiKey: "AIzaSyCJWLSVrJr1qW8cVRrRBeQSTd5jjG0pDNg",
+    authDomain: "olx-clone-react.firebaseapp.com",
+    databaseURL: "https://olx-clone-react.firebaseio.com",
+    projectId: "olx-clone-react",
+    storageBucket: "olx-clone-react.appspot.com",
+    messagingSenderId: "636084424751",
+    appId: "1:636084424751:web:f539387b246e190e69b6da",
+    measurementId: "G-LS0ZM3QVXN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+</script>
+<script src="../Scripts/app.js"></script>
+</body>
+</html>
